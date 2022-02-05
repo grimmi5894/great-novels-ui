@@ -1,9 +1,13 @@
 import './App.css';
+import Novels from './components/novels';
 import Title from './components/title';
 
 function App() {
   return (
-    <Title/>
+    <div className='App'>
+       <Title/>
+       <Novels/>
+    </div>
   )
 }
 
