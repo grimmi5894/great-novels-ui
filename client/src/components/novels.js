@@ -17,7 +17,7 @@ const Novels = () => {
   }, [])
 
   useEffect(() => {
-    const searchedNovels = novels.filter(novel => novel.title.includes(title))
+    const searchedNovels = novels.filter(novel => novel.title.toLowerCase().includes(title.toLocaleLowerCase()))
     setFilteredNovels(searchedNovels)
   }, [novels, title])
 
